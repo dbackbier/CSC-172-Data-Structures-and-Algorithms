@@ -1,0 +1,108 @@
+Dane Backbier - dbackbie - dbackbie@u.rochester.edu - Project 1
+Output:
+C:\Users\daneb\.vscode\CSC 172\Labs\PROJ1 - Infix Calculator>javac URCalculator.java
+
+C:\Users\daneb\.vscode\CSC 172\Labs\PROJ1 - Infix Calculator>java URCalculator infix_expr_short.txt postfix_eval_short.txt
+Tokenized Expression: [1, +, 1]
+Post fix expression: [1, 1, +]
+My answer to 1 + 1 is 2.00
+
+Tokenized Expression: [5.2, +, 1]
+Post fix expression: [5.2, 1, +]
+My answer to 5.2 + 1 is 6.20
+
+Tokenized Expression: [5.2, +, 1.0]
+Post fix expression: [5.2, 1.0, +]
+My answer to 5.2 + 1.0 is 6.20
+
+Tokenized Expression: [1, -, 1]
+Post fix expression: [1, 1, -]
+My answer to 1 - 1 is 0.00
+
+Tokenized Expression: [5.2, -, 1]
+Post fix expression: [5.2, 1, -]
+My answer to 5.2 - 1 is 4.20
+
+Tokenized Expression: [1.0, -, 5.2]
+Post fix expression: [1.0, 5.2, -]
+My answer to 1.0 - 5.2 is -4.20
+
+Tokenized Expression: [3.0, *, 4]
+Post fix expression: [3.0, 4, *]
+My answer to 3.0 * 4 is 12.00
+
+Tokenized Expression: [4, /, 0.25]
+Post fix expression: [4, 0.25, /]
+My answer to 4 / 0.25 is 16.00
+
+Tokenized Expression: [1, -, (, 4, +, 5, )]
+Post fix expression: [1, 4, 5, +, -]
+My answer to 1 - (4 + 5) is -8.00
+
+Tokenized Expression: [1, -, (, 1, -, (, 4, +, 5, ), )]
+Post fix expression: [1, 1, 4, 5, +, -, -]
+My answer to 1 - (1 - (4 + 5)) is 9.00
+
+Tokenized Expression: [0, <, 55]
+Post fix expression: [0, 55, <]
+My answer to 0 < 55 is 1.00
+
+Tokenized Expression: [3.2, <, 2.3]
+Post fix expression: [3.2, 2.3, <]
+My answer to 3.2 < 2.3 is 0.00
+
+Tokenized Expression: [0, >, 55]
+Post fix expression: [0, 55, >]
+My answer to 0 > 55 is 0.00
+
+Tokenized Expression: [3.2, >, 2.3]
+Post fix expression: [3.2, 2.3, >]
+My answer to 3.2 > 2.3 is 1.00
+
+Tokenized Expression: [5, =, 5.0]
+Post fix expression: [5, 5.0, =]
+My answer to 5 = 5.0 is 1.00
+
+Tokenized Expression: [1, =, 1]
+Post fix expression: [1, 1, =]
+My answer to 1 = 1 is 1.00
+
+Tokenized Expression: [1, =, 0]
+Post fix expression: [1, 0, =]
+My answer to 1 = 0 is 0.00
+
+Tokenized Expression: [1, &, 1]
+Post fix expression: [1, 1, &]
+My answer to 1 & 1 is 1.00
+
+Tokenized Expression: [1, &, 0]
+Post fix expression: [1, 0, &]
+My answer to 1 & 0 is 0.00
+
+Tokenized Expression: [1, |, 0]
+Post fix expression: [1, 0, |]
+My answer to 1 | 0 is 1.00
+
+Tokenized Expression: [0, |, 0]
+Post fix expression: [0, 0, |]
+My answer to 0 | 0 is 0.00
+
+Tokenized Expression: [!, 0]
+Post fix expression: [0, !]
+My answer to ! 0 is 1.00
+
+Tokenized Expression: [!, 1]
+Post fix expression: [1, !]
+My answer to ! 1 is 0.00
+
+Tokenized Expression: [!, (, 3, *, (, 1, +, 6, ), =, 63, /, 3, )]
+Post fix expression: [3, !, 1, *, 6, +, 63, 3, /, =]
+My answer to ! (3 * (1 + 6) = 63 / 3) is 0.00
+
+Tokenized Expression: [(, 1, <, 3, ), &, (, 2, >, 4, ), |, 1]
+Post fix expression: [1, 3, <, 2, 4, >, &, 1, |]
+My answer to (1 < 3) & (2 > 4) | 1 is 1.00
+
+myOutput: [2.00, 6.20, 6.20, 0.00, 4.20, -4.20, 12.00, 16.00, -8.00, 9.00, 1.00, 0.00, 0.00, 1.00, 1.00, 1.00, 0.00, 1.00, 0.00, 1.00, 0.00, 1.00, 0.00, 0.00, 1.00]
+correctOutput: [2.00, 6.20, 6.20, 0.00, 4.20, -4.20, 12.00, 16.00, -8.00, 9.00, 1.00, 0.00, 0.00, 1.00, 1.00, 1.00, 0.00, 1.00, 0.00, 1.00, 0.00, 1.00, 0.00, 0.00, 1.00]
+URCalculator calculated all expressions from infix_expr_short.txt correctly.
