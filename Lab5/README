@@ -1,0 +1,23 @@
+Dane Backbier - dbackbie - dbackbie@u.rochester.edu - Lab 5 - Hash Tables
+
+Lab 5 is aimed at implementing a hash table ADT. To test URHashTable.java, simply
+compile and run the file (keep assertions enabled), if this is the output:
+put and get methods passed.
+
+delete method passed.
+
+size and isEmpty methods passed.
+
+contains method passed.
+
+resize method passed.
+
+iterator method passed.
+
+All tests passed!
+
+Then the program ran successfully without errors and as intended.
+The extra files, other than URHashTable and my linked list file and all the required
+files for the linked list (node and list files), which is used for the iterator in
+URHashTable. Additionally, there is the provided lab5 instruction pdf. There is no
+extra testing file as the test cases are ran in the main method of URHashTable.

@@ -1,0 +1,24 @@
+Dane Backbier - dbackbie - dbackbie@u.rochester.edu - Lab 6 - Binary Search Trees
+
+Lab 6 is aimed at implementing a binary search tree ADT class in Java. To test
+UR_BST.java simply compile and run the code(keeping assertions enabled). This
+is the expected output (where all tests are passed):
+put and get methods passed.
+
+put method error handling passed.
+
+isEmpty, size, and contains methods passed.
+
+deleteMin and deleteMax methods passed.
+
+delete method passed.
+
+height method passed.
+
+levelOrder method passed.
+
+All tests passed!
+
+The other files in this file are the various class files created when compiling
+UR_BST.java, this README and the instructions pdf. All the tests are ran from
+the main method of UR_BST.java so no extra testing file is needed.
