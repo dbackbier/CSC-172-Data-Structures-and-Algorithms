@@ -1,0 +1,28 @@
+Dane Backbier - dbackbie - dbackbie@u.rochester.edu - Lab 7 - Heaps
+
+Lab 7 is aimed at implementing a heap ADT in Java. To test minHeap.java simply
+compile and run the code(keeping assertions enabled). This is the expected output
+(where all tests are passed):
+1 3 8 5 4
+
+4 5 8
+
+insert and deleteMin methods passed
+
+size and isEmpty methods passed
+
+2 4 6 7 8
+
+expand method passed
+
+1 4 3 6 8 7
+
+heapify method passed
+
+All methods passed.
+
+The parts of the output that are numbers are the outputs from the printHeap method.
+The other files are the UR_Heap.java, which was implemented in minHeap.java. There
+are also the class files from compiling the code, this README, and the lab instructions
+pdf. There is no specific testing file as the unit tests are done in the main method
+of minHeap.java.
