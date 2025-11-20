@@ -1,0 +1,11 @@
+Dane Backbier - dbackbie - dbackbie@u.rochester.edu - Project 2 - Huffman Coding
+
+Project 2 is an implementation of a Huffman coding tree, to both encode and decode
+a file. Simply compile and run to test, making sure all the additional files (BinaryIn,
+BinaryOut, and Huffman) are in the same directory as well as the original ur.jpg and
+alice30.txt files.
+The program will have worked if it successfully created a .enc file for both ur.jpg
+and alice30.txt, a _dec.txt or _dec.jpg file for the corresponding file, which should
+be identical with the original. If these files were all created correctly, then the
+freq files must've also been made correctly since the creation of the output files
+depend on the freq files.
