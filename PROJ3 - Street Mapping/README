@@ -1,0 +1,55 @@
+Dane Backbier - dbackbie - dbackbie@u.rochester.edu - Project 3 - Street Mapping
+
+Project 3 - Street Mapping is aimed at implementing dijkstra's shortest path algorithm to find paths
+between any given points in a graph and to create a GUI to visually show the path.
+
+My code works using my URGraph, UREdge, URGraphNode, minHeap classes as well as other built-in data
+structures. The main class is the StreetMap.java and is the file that is compiled and ran. It works
+by first checking that enough arguments were given, then iterating through the arguments and figuring
+out if whether or not it should show the graph/ directions or if the arguments are incorrect. Then it
+creates a graph using using the URGraph constructor built for taking files and making a graph out of
+a file. Depending on whether the user chose to show the graph or directions. If the user just wants
+to show, the chosen graph will be shown without any path, just the graph. Then uses the isConnected
+method to check if the start and end nodes are connected in the first place, if so it'll continue. If
+both show and directions are true it'll initialized a Pair<ArrayList<URGraphNode>, ArrayList<String>>
+for the path and pathIDs respectively, generated from the dijkstras method, which runs in O((V+E)log V)
+time. I created a Pair class near the top of the StreetMap file so that I could return both the path
+and pathIDs as I would need the pathIDs for the GUI, and decided to initialize a Pair first and
+call getLeft and getRight to instead of calling getLeft and getRight on dijkstras twice as then dijkstras
+would run twice, which takes too long. After assigning path to the left value and pathIDs to the right
+value of the Pair, it will only continue in the path is not empty because if it does, the for loop will
+cause an ErrorOutOfBoundsException. Then it'll iterate through the path list keeping track of the total
+distance after each step and outputting the directions, and when it's done, the total distance. Then it
+will create the GUI, it does this using an overridden paint method, which works using two passes of
+the edge set, the first being drawing the lines between all edges in black, and the second iterating
+through all the edges again but then only drawing the lines that are in the path ID set in red. Leading
+to an O(E) runtime. But if there's no GUI being shown it'll only print out the directions as explain
+previously. And if the two chosen intersections aren't connected, it will output accordingly.
+
+The main obstacle I overcame was figuring out how to scale my original algorithm for the larger datasets
+of monroe.txt and nys.txt, which did by using a min heap/ priority queue which stores the shortest distance
+with at the top so I can access it in O(1) time, rather than repeatedly finding the closest node, which took
+O(E) time.
+
+File List:
+GraphGUI.class - GUI class from compiler
+GraphGUI.java - GUI java file
+minHeap.class - min heap class from compiler
+minHeap.java - java min heap file (my own)
+monroe.txt - graph data for monroe county
+nys.txt - graph data for nys
+proj3.pdf - project instructions pdf
+README
+StreetMap.class - street mapping class from compiler
+StreetMap.java - java street mapping file
+StreetMap$NodeDist.class - node dist class (made in StreetMap)
+StreetMap$Pair.class - Pair class (made in StreetMap)
+UR_Heap.class - heap class, implemented in minHeap
+UR_Heap.java - java heap file
+ur.txt - graph data for ur
+UREdge.class - edge class for graph
+UREdge.java - java edge file
+URGraph.class - graph class
+URGraph.java - java graph file
+URGraphNode.class - node class for graph
+URGraphNode.java - java node file
